@@ -1,3 +1,13 @@
+### warn!
+This is a slightly  modified theme forked from [azmelanar/hugo-theme-pixyll](https://github.com/azmelanar/hugo-theme-pixyll), having following modifications:
+- Removed taxonomies (such as tags, categories)
+- Added github fork ribbon (should configure param in config file)
+  ```
+  [params]
+      GithubLinkFork     = "https://github.com/chaos-eng/chaos-eng.github.io/"
+  ```
+- Removed year value, as years are years fly by so fast 😐
+---
 # Pixyll
 
 Pixyll is a simple, beautiful theme for [Hugo](http://gohugo.io/).
