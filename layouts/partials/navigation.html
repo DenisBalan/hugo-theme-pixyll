@@ -1,11 +1,8 @@
-<a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}/about/">{{ i18n "about" }}</a>
-<a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}/tags/">{{ i18n "tags" }}</a>
-<a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}/contact/">{{ i18n "contact" }}</a>
 {{- if .Site.IsMultiLingual -}}
 {{- range $lang := .Site.Languages -}}
-{{- if ne $.Site.Language $lang -}}
+
 <a href="/{{ $lang }}">{{ $lang }}</a>
-{{- end -}}
+
 {{- end -}}
 {{- end -}}
 {{ if isset .Site.Params "search_engine" }}
@@ -14,3 +11,4 @@
     <input type="text" class="search-query" placeholder="{{ i18n "search" }}" name="q" id="tipue_search_input">
 {{ end }}
 </form>
+<a href="{{ $.Site.Params.GithubLinkFork }}"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
